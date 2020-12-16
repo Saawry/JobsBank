@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:elevation="10dp"
+    android:background="@drawable/product_view_background"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/str_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17dp" />
+                <TextView
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/str_org"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="19dp" />
+                <TextView
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/tv_org"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="@string/str_vacancy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+                    <TextView
+                        android:id="@+id/tv_vacancy"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:text="@string/str_deadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/tv_deadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:text="@string/str_rem_days"
+                        android:layout_marginLeft="14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/tv_days_remaining"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>

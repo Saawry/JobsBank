@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#566D7E</color>
+    <color name="colorPrimaryDark">#2B3856</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorLight">#ffffff</color>
+    <color name="colorLightTrns">#70ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorCloud">#C5C6D0</color>
+    <color name="colorYellow">#FDD023</color>
+    <color name="colorKoi">#87AFC7</color>
+    <color name="colorOrange">#F9966B</color>
+    <color name="colorSoil">#827B60</color>
+
+    <color name="colorAccentT">#25D81B60</color>
+</resources>

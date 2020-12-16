@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Jobs Bank BD</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="str_title">পদের নাম</string>
+    <string name="str_org">প্রতিষ্ঠান</string>
+    <string name="str_title_org">পদের নাম/প্রতিষ্ঠান</string>
+    <string name="str_deadline">শেষ তারিখ</string>
+    <string name="str_vacancy">পদের সংখ্যা</string>
+    <string name="str_rem_days">দিন বাকি</string>
+    <string name="category_prompt">Choose a Category</string>
+    <string-array name="category_items_arrays">
+        <item>Category</item>
+        <item>Govt</item>
+        <item>Private</item>
+    </string-array>
+</resources>

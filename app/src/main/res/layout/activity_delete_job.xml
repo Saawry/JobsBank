@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteJob">
+
+    <include
+        android:id="@+id/delete_job_toolbar"
+        layout="@layout/custom_toolbar">
+    </include>
+
+
+<LinearLayout
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <Spinner
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/delete_spinner_category"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:entries="@array/category_items_arrays"
+        android:prompt="@string/category_prompt" />
+    <Button
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:text="Find Expired Jobs"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_background"
+        android:id="@+id/find_btn"
+        android:textAllCaps="false"
+        >
+    </Button>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/product_view_background"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/delete_job_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</LinearLayout>

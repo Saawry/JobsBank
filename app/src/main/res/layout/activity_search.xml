@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+    <include
+        android:id="@+id/search_job_toolbar"
+        layout="@layout/custom_toolbar">
+    </include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/search_job_toolbar"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/radio_group_layout">
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/radio_govt"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Govt" />
+
+            <RadioButton
+                android:id="@+id/radio_private"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Private" />
+        </RadioGroup>
+        <View
+            android:layout_toEndOf="@+id/radio_group"
+            android:id="@+id/vertical_line_view"
+            android:layout_width="7dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent" />
+        <RadioGroup
+            android:id="@+id/radio_group2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@+id/vertical_line_view"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/radio_title"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Post" />
+
+            <RadioButton
+                android:id="@+id/radio_org"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Org" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/radio_group_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/search_layout">
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="90dp"
+            android:hint="@string/str_title_org"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_background"
+            android:text="Search"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+<RelativeLayout
+    android:background="@drawable/product_view_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/search_layout">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_job_recycler"
+        android:layout_width="416dp"
+        android:layout_height="671dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_weight="1"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</RelativeLayout>
+
+
+</RelativeLayout>
