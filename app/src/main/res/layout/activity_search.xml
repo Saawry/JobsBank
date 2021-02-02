@@ -108,7 +108,7 @@
     android:layout_height="match_parent"
     android:layout_below="@id/search_layout">
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/search_job_recycler"
         android:layout_width="416dp"
         android:layout_height="671dp"

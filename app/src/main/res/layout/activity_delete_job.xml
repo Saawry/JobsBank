@@ -50,7 +50,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/product_view_background"
         android:orientation="vertical">
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/delete_job_recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
