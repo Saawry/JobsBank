@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/govt_job_menu"
+        android:icon="@drawable/ic_baseline_business_center_24"
+        android:title="Govt"
+        app:cnb_iconColor="@color/colorLight"/>
+    <item
+        android:id="@+id/new_job_menu"
+        android:icon="@drawable/ic_baseline_campaign_24"
+        android:title="Latest"
+        app:cnb_iconColor="@color/colorLight"/>
+    <item
+        android:id="@+id/private_job_menu"
+        android:icon="@drawable/ic_baseline_store_24"
+        android:title="Private"
+        app:cnb_iconColor="@color/colorLight" />
+
+</menu>

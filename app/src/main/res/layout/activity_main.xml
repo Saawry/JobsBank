@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#ffffff"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <include
-        android:id="@+id/main_app_bar"
-        layout="@layout/app_bar_layout">
-    </include>
+    <RelativeLayout
 
-
-
-    <com.google.android.material.tabs.TabLayout
-        app:tabTextColor="@color/colorLight"
-        android:id="@+id/main_tabs"
-        android:background="@color/colorPrimary"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-
-    </com.google.android.material.tabs.TabLayout>
-
-
-    <androidx.viewpager.widget.ViewPager
-        android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:id="@+id/main_tabs_pager">
-    </androidx.viewpager.widget.ViewPager>
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-</LinearLayout>
+        <include
+            android:id="@+id/main_app_bar"
+            layout="@layout/app_bar_layout">
+        </include>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container"/>
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            app:cnb_orientationMode="horizontal"
+            android:elevation="18dp"
+            android:padding="8dp"
+            app:cnb_iconTintMode="src_atop"
+            android:background="@drawable/chip_nav_background"
+            android:id="@+id/bottomChipBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:cnb_menuResource="@menu/bottom_menu" />
+
+    </RelativeLayout>
+</layout>
